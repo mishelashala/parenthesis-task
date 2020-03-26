@@ -38,6 +38,11 @@ describe('isBalanced with only parenthesis', () => {
       const result = isBalanced('()][{}')
       expect(result).toBe(false)
     })
+    
+    it('should return false if the characters are even, nested and not in oder', () => {
+      const result = isBalanced('({)}')
+      expect(result).toBe(false)
+    })
   })
 })
 
